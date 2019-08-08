@@ -11,19 +11,19 @@ build_script:
   - ps: dotnet --list-sdks
   - ps: ./build.ps1
 artifacts:
-- path: artifacts/Logic.Tech.Talk*.nupkg
+- path: artifacts/Logic.Calulator.Talk*.nupkg
 deploy:
 - provider: NuGet
   api_key:
-    secure: K7lRlmBWfyD5rlXYok97X8usTb8NG3w5n5oqj8ex5QUoKma6lvUtTxEC/DfQUX90
+    secure: Z7JJQxHuGkhG15R5VCMHJ3DbZpuKt0wWRajQ6CrZIink8S+q1udHzCGCs4KdKeVp
   skip_symbols: true
   on:
     branch: /^(master|dev)$/
     CI_WINDOWS: true
 - provider: GitHub
   auth_token:
-    secure: o+gniYi7nDKjyJ0/uY2Fu1e2+wm9n4lFfvibGDyInJhUGfF2ykJ1KQ34FI+TOHh4
-  artifact: /Logic.Tech.Talk.*\.nupkg/
+    secure: 8n5mcu6F6LXbJP2bHntagZieDcdev6TQ2jmo5FxYbx4DPHWgbp0dp1Fb0zaO5YxP
+  artifact: /Logic.Calulator.Talk.*\.nupkg/
   tag: v$(appveyor_build_version)
   on:
     branch: master
