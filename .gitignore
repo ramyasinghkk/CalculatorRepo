@@ -3,3 +3,6 @@
 ################################################################################
 
 /.vs/CalculatorRepo/v16
+/.vs/logic-day-calculator
+/.vs
+/src/ICalculator/obj
