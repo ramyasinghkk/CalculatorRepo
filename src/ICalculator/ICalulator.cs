@@ -7,7 +7,11 @@ namespace ICalculator
     public interface ICalulator
     {
         int Add(int a, int b);
+
         int Substract(int a, int b);
+
         int Mul(int a, int b);
+
+        int Div(int a, int b);
     }
 }
